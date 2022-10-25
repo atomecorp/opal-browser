@@ -97,7 +97,6 @@ class Event
 
   def initialize(event, callback = nil)
     super(event)
-
     @callback = callback
   end
 
