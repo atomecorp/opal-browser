@@ -23,4 +23,5 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'opal', ['>= 1.0', '< 2.0']
   spec.add_dependency 'paggio', '~> 0.3.0'
+  
 end
