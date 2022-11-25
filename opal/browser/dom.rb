@@ -64,7 +64,7 @@ module Kernel
   def DOM(*args, &block)
     if block
       document = args.shift || $document
-      roots    = Browser::DOM::Builder.new(document, &block).to_a
+      roots = Browser::DOM::Builder.new(document, &block).to_a
 
       if roots.length == 1
         roots.first
@@ -72,7 +72,7 @@ module Kernel
         Browser::DOM::NodeSet.new(roots)
       end
     else
-      what     = args.shift
+      what = args.shift
       document = args.shift || $document
 
       what = what.to_dom(document) if Opal.respond_to? what, :to_dom
@@ -103,15 +103,22 @@ end
 
 module Browser
 
-class Window
-  # Get the {DOM::Document} for this window.
-  #
-  # @return [DOM::Document]
-  def document
-    DOM(`#@native.document`)
+  class Window
+    # Get the {DOM::Document} for this window.
+    #
+    # @return [DOM::Document]
+    def document
+      DOM(`#@native.document`)
+    end
   end
-end
 
+  def self.window
+    $window
+  end
+
+  def self.window
+    $window.document
+  end
 end
 
 $document = $window.document
