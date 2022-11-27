@@ -14,7 +14,7 @@ module Browser
         end
 
         def currentTime= (val)
-          `#@native.currentTime = #{val};`
+          `#@native.currentTime = #{val}`
         end
 
         def currentTime
