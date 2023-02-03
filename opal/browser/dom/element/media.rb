@@ -13,6 +13,14 @@ module Browser
           `#@native.pause()`
         end
 
+        def muted
+          `#@native.muted=true`
+        end
+
+        def unmuted
+          `#@native.muted=false`
+        end
+
         def currentTime= (val)
           `#@native.currentTime = #{val}`
         end

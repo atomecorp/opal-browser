@@ -1,8 +1,9 @@
 source "https://rubygems.org"
-
+gem 'opal'
+gem 'rake', "~> 13.0"
+gem 'puma'
+gem 'rack', '~> 2.2'
 gem "opal-sprockets"
 gem "roda-sprockets"
-gem "puma"
-gem "rake"
-gem "opal-browser", path: "../../.."
 gem "sassc"
+gem "opal-browser", path: "../../.."

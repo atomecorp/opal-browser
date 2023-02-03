@@ -1,7 +1,10 @@
 source "https://rubygems.org"
-
+gem 'opal'
 gem "opal-sprockets"
 gem "puma"
-gem "rake"
-gem "sinatra"
+gem "roda-sprockets", ">= 2.0.0a"
+gem 'rake', "~> 13.0"
+gem 'rack', '~> 2.2'
 gem "opal-browser", path: "../../.."
+gem "sinatra"
+

@@ -1,11 +1,11 @@
 require_relative 'opal/browser/version'
 
 Gem::Specification.new do |spec|
-  spec.name     = 'opal-browser'
+  spec.name     = 'atome-opal-browser'
   spec.version  = Browser::VERSION
   spec.author   = ['meh.', 'hmdne']
-  spec.email    = 'meh@schizofreni.co'
-  spec.homepage = 'http://github.com/opal/opal-browser'
+  spec.email    = 'contact@atome.one'
+  spec.homepage = 'http://github.com/opal/atome-opal-browser'
   spec.platform = Gem::Platform::RUBY
   spec.summary  = 'Browser support for Opal.'
   spec.license  = 'MIT'
